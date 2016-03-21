@@ -1,10 +1,8 @@
-//= require jquery
+  //= require jquery
 
 $(document).ready(function() {
   var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
   $('#js-centered-navigation-menu').removeClass("show");
-
-  console.log("maike is so coooool");
 
   menuToggle.on('click', function(e) {
     e.preventDefault();
