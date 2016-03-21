@@ -6,7 +6,7 @@ html
     meta charset="utf-8" /
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /
     /! Use title if it's in the page YAML frontmatter
-    title= current_page.data.title || "Middleman"
+    title= current_page.data.title || "TV Hemau"
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css" /
     = stylesheet_link_tag :site
     = javascript_include_tag :all
@@ -18,39 +18,86 @@ html
        a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu href="javascript:void(0)"  MENU
        nav role="navigation" 
          ul#js-centered-navigation-menu.centered-navigation-menu.show
-           li.nav-link
-             a href="javascript:void(0)"  Products
-           li.nav-link
-             a href="javascript:void(0)"  About Us
-           li.nav-link
-             a href="javascript:void(0)"  Contact
-           li.nav-link.logo
+           li.nav-link.logo.more
              a.logo href="javascript:void(0)" 
-               img alt=("Logo image") src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" /
-           li.nav-link
-             a href="javascript:void(0)"  Testimonials
+               img alt=("Home") src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" /
+             ul.submenu
+               li 
+                 a href="home-chronik.html.slim" Chronik
+               li 
+                 a href="home-ansprechpartner.html.slim" Ansprechpartner
+               li 
+                 a href="home-termine.html.slim" Termine
+               li 
+                 a href="home-kontakt.html.slim" Kontakt
            li.nav-link.more
-             a href="javascript:void(0)"  More
+             a href="fussball.html.slim"  Fußball
+             ul.submenu
+               li 
+                 a href="fussball-erste.html.slim" 1. Mannschaft
+               li 
+                 a href="fussball-zweite.html.slim" 2. Mannschaft
+               li 
+                 a href="fussball-tabellen.html.slim" Tabellen
+               li 
+                 a href="fussball-training.html.slim" Training
+               li.more 
+                 a href="fussball-jugend.html.slim" Jugend
+                 ul.submenu
+                   li 
+                     a href="fussball-e_jugend.html.slim" E Jugend
+                   li 
+                     a href="fussball-f_jugend.html.slim" F Jugend
+                   li 
+                     a href="fussball-g_jugend.html.slim" G Jugend
+               li 
+                 a href="fussball-ansprechpartner.html.slim" Ansprechpartner
+               li 
+                 a href="fussball-sponsoren.html.slim" Sponsoren
+               li 
+                 a href="" JFG
+           li.nav-link
+             a href=""  Handball
+           li.nav-link.more
+             a href="turnen.html.slim"  Turnen
              ul.submenu
                li
-                 a href="javascript:void(0)"  Submenu Item
+                 a href="turnen-ansprechpartner.html.slim" Ansprechpartner
                li
-                 a href="javascript:void(0)"  Another Item
-               li.more
-                 a href="javascript:void(0)"  Item with submenu
-                 ul.submenu
-                   li
-                     a href="javascript:void(0)"  Sub-submenu Item
-                   li
-                     a href="javascript:void(0)"  Another Item
-               li.more
-                 a href="javascript:void(0)"  Another submenu
-                 ul.submenu
-                   li
-                     a href="javascript:void(0)"  Sub-submenu
-                   li
-                     a href="javascript:void(0)"  An Item
+                 a href="turnen-training.html.slim" Training
+           li.nav-link.more
+             a href="tennis.html.slim"  Tennis
+             ul.submenu
+               li
+                 a href="tennis-ansprechpartner.html.slim" Ansprechpartner
+               li
+                 a href="tennsi-halle_mieten.html.slim" Halle mieten
+           li.nav-link.more
+             a href="herzsport.html.slim"  Herzsport
+             ul.submenu
+               li
+                 a href="herzsport-ansprechpartner.html.slim" Ansprechpartner
+               li
+                 a href="herzsport-training.html.slim" Training
+           li.nav-link.more
+             a href="tischtennis.html.slim"  Tischtennis
+             ul.submenu
+               li
+                 a href="tischtennis-ansprechpartner.html.slim" Ansprechpartner
+               li
+                 a href="tischtennis-training.html.slim" Training
            li.nav-link
-             a href="javascript:void(0)"  Sign up
+             a href=""  Ski & Snowboard
+           li.nav-link.more
+             a href="volleyball.html.slim"  Volleyball
+             ul.submenu
+               li
+                 a href="volleyball-ansprechpartner.html.slim" Ansprechpartner
+               li
+                 a href="volleyball-training.html.slim" Training
+           li.nav-link
+             a href=""  Prinzengarde
+           li.nav-link
+             a href=""  Sportstüberl
 
     = yield
