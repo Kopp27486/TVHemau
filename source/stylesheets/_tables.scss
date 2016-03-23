@@ -1,0 +1,23 @@
+table{
+  padding: 10px 10px;
+  font-size: .8em;
+}
+
+td, th {
+  border: 1px solid #000;
+}
+
+table tr:nth-child(odd) {
+  background: rgba(#ff3900, 0.7);
+  color: #000;
+}
+
+table tr:nth-child(even) {
+  background: rgba(#fff, 0.7);
+  color: #000;
+}
+
+table tr:hover {
+  background-color: #e92222;
+  color: #fff;
+}
