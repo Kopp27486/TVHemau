@@ -1,14 +1,8 @@
-.footer-2 {
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $footer-background: #ff3900;
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+.footer {
 
-  background: $footer-background;
+  background: $navigation-background;
+  background-color: $navigation-background;
+  border-top: 1px solid darken($navigation-background, 20%);
   padding: $base-spacing;
   width: 100%;
   display: inline-block;
@@ -56,7 +50,7 @@
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: transparentize($navigation-font-color, 0);
     }
   }
 

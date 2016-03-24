@@ -1,0 +1,52 @@
+$tv-hemau-rot: #ff3900;
+$white: #ffffff;
+$black: #000000;
+$dark-gray: #333;
+$light-gray: #DDD;
+$red: #ff0000;
+$green: #00ff00;
+$blue: #0000ff;
+
+$base-border-radius: 3px !default;
+
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+$base-spacing: 1.5em !default;
+$base-line-height: 1.5em !default;
+$base-font-color: $dark-gray !default;
+$base-background-color: $light-gray !default;
+$base-border-color: $tv-hemau-rot !default;
+
+$action-color: $tv-hemau-rot !default;
+
+
+$navigation-background: $tv-hemau-rot;
+$navigation-height: 60px;
+$navigation-font-color: $dark-gray;
+$navigation-font-color-hover: $white;
+
+/* Variablen _nav-bar */
+$centered-navigation-padding: 1em;
+$centered-navigation-logo-height: 2em;
+$centered-navigation-color: transparentize($base-font-color, 0.3);
+$centered-navigation-color-hover: $black;
+$centered-navigation-item-padding: 1em;
+$centered-navigation-submenu-padding: 1em;
+$centered-navigation-submenu-width: 12em;
+$centered-navigation-item-nudge: 2.2em;
+$horizontal-bar-mode: $large-screen;
+
+/* Variablen _footer-bar */
+$footer-link-color: transparentize($navigation-font-color, 0.6);
+$footer-disclaimer-color: transparentize($navigation-font-color, 0.6);
+
+/* Variablen _tables */
+$table-border-color: $base-border-color;
+$table-border: 1px solid $table-border-color;
+$table-background: lighten($table-border-color, 12%);
+$table-header-background: lighten($table-background, 10%);
+$table-hover-background: darken($table-background, 5%);
+$table-stripe-background: darken($table-background, 2%);
+$table-stripe-background-hover: darken($table-stripe-background, 5%);
+$table-padding: 0.75em 1em;
