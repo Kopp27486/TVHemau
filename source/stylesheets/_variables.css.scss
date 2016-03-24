@@ -1,11 +1,11 @@
-$tv-hemau-rot:  #ff3900;
-$white:         #ffffff;
-$black:         #000000;
-$dark-gray:     #333333;
-$light-gray:    #DDDDDD;
-$red:           #ff0000;
-$green:         #00ff00;
-$blue:          #0000ff;
+$tv-hemau-rot:  #ff3900 !default;
+$white:         #ffffff !default;
+$black:         #000000 !default;
+$dark-gray:     #333333 !default;
+$light-gray:    #DDDDDD !default;
+$red:           #ff0000 !default;
+$green:         #00ff00 !default;
+$blue:          #0000ff !default;
 
 $base-border-radius: 3px !default;
 
@@ -14,11 +14,16 @@ $large-screen: em(860) !default;
 
 $base-spacing: 1.5em !default;
 $base-line-height: 1.5em !default;
-$base-font-color: $dark-gray !default;
-$base-background-color: $light-gray !default;
-$base-border-color: $tv-hemau-rot !default;
 
-$action-color: $tv-hemau-rot !default;
+$base-font-color: $dark-gray !default;
+$base-font-color-hover: $white !default;
+
+$base-background-color: $light-gray !default;
+
+$base-border-color: darken($tv-hemau-rot, 20%) !default;
+
+
+$action-color: $white !default;
 
 
 $navigation-background: $tv-hemau-rot;
@@ -45,8 +50,8 @@ $footer-disclaimer-color: transparentize($navigation-font-color, 0.6);
 $table-border-color: $base-border-color;
 $table-border: 1px solid $table-border-color;
 $table-background: lighten($table-border-color, 12%);
-$table-header-background: lighten($table-background, 10%);
-$table-hover-background: darken($table-background, 5%);
+$table-header-background: white;
+$table-hover-background: white;
 $table-stripe-background: darken($table-background, 2%);
 $table-stripe-background-hover: darken($table-stripe-background, 5%);
 $table-padding: 0.75em 1em;

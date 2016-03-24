@@ -2,8 +2,8 @@
 
   background: $navigation-background;
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 20%);
-  min-height: $navigation-height;
+  border-bottom: 3px solid $base-border-color;
+  padding: $base-spacing;
   width: 100%;
   z-index: 9999;
   margin-bottom: 3em;

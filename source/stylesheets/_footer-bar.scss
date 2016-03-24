@@ -2,10 +2,11 @@
 
   background: $navigation-background;
   background-color: $navigation-background;
-  border-top: 1px solid darken($navigation-background, 20%);
+  border-top: 3px solid $base-border-color;
   padding: $base-spacing;
   width: 100%;
   margin-top: 3em;
+  z-index: 9999;
   display: inline-block;
 
   .footer-logo {
