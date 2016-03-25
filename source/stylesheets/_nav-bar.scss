@@ -240,6 +240,10 @@
         text-decoration: none;
         width: 100%;
 
+        &:hover{
+
+        }
+
         @include media($horizontal-bar-mode) {
           background-color: $navigation-background;
           padding-left: $main-navigation-submenu-padding;
