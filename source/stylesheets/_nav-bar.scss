@@ -3,7 +3,6 @@
   background: $navigation-background;
   background-color: $navigation-background;
   border-bottom: 3px solid $base-border-color;
-  padding: $base-spacing;
   width: 100%;
   z-index: 9999;
   margin-bottom: 3em;
@@ -44,7 +43,7 @@
 
     &:focus,
     &:hover {
-      color: $centered-navigation-color-hover;
+      color: $navigation-color-hover;
     }
   }
 
@@ -106,7 +105,7 @@
 
       &:focus,
       &:hover {
-        color: $centered-navigation-color-hover;
+        color: $navigation-color-hover;
       }
     }
 

@@ -30,10 +30,11 @@ $navigation-background: $tv-hemau-rot;
 $navigation-height: 60px;
 $navigation-font-color: $dark-gray;
 $navigation-font-color-hover: $white;
+$navigation-color-hover: $white;
 
 /* Variablen _nav-bar */
 $centered-navigation-padding: 1em;
-$centered-navigation-logo-height: 2em;
+$centered-navigation-logo-height: 3em;
 $centered-navigation-color: transparentize($base-font-color, 0.3);
 $centered-navigation-color-hover: $black;
 $centered-navigation-item-padding: 1em;
