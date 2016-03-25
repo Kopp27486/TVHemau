@@ -10,35 +10,27 @@
 
   tbody {
     background-color: $table-background;
-
-    tr:hover > td, tr:hover > th {
-      background-color: $table-hover-background;
-    }
-    tr:nth-child(even) {
-      background-color: $table-stripe-background;
-      &:hover > td {
-        background-color: $table-stripe-background-hover;
-      }
-    }
-  }
-
-  thead:first-of-type {
-    tr:first-child > th:first-child {
       border-top-left-radius: $base-border-radius;
-    }
-
-    tr:first-child > th:last-child {
       border-top-right-radius: $base-border-radius;
-    }
-  }
-
-  tbody:last-child {
-    tr:last-child > td:first-child {
       border-bottom-left-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
+
+    td, th {
+      boder: 1px solid $base-border-color;
     }
 
-    tr:last-child > td:last-child {
-      border-bottom-right-radius: $base-border-radius;
+    tr:nth-child(odd) {
+      background: transparentize($light-gray, .4);
+      color: $dark-gray;
+    }
+
+    tr:nth-child(even) {
+      backgorund: transparentize($tv-hemau-rot, .4);
+    }
+
+    tr:hover {
+      background-color: $tv-hemau-rot;
+      color: $white;
     }
   }
 
@@ -84,6 +76,81 @@
           width: auto;
         }
       }
+    }
+  }
+}
+
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.card {
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $light-gray;
+  border-radius: $base-border-radius;
+  border: $card-border;
+  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  cursor: pointer;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+
+
+  .card-image {
+    overflow: hidden;
+    height: 90px;
+    max-height: 90px;
+    max-width: 200px;
+    margin: auto auto;
+    background-color: $light-gray;
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    img {
+      opacity: $card-image-hover-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
     }
   }
 }

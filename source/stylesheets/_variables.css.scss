@@ -22,9 +22,7 @@ $base-background-color: $light-gray !default;
 
 $base-border-color: darken($tv-hemau-rot, 20%) !default;
 
-
-$action-color: $white !default;
-
+$action-color: $light-gray !default;
 
 $navigation-background: $tv-hemau-rot;
 $navigation-height: 60px;
@@ -56,3 +54,10 @@ $table-hover-background: white;
 $table-stripe-background: darken($table-background, 2%);
 $table-stripe-background-hover: darken($table-stripe-background, 5%);
 $table-padding: 0.75em 1em;
+
+$card-border-color: $base-border-color;
+$card-border: 1px solid $card-border-color;
+$card-background: lighten($card-border-color, 10%);
+$card-header-background: $card-background;
+$card-margin: 1em;
+$card-image-hover-opacity: 0.7;
