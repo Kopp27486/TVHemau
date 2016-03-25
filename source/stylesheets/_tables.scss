@@ -10,10 +10,10 @@
 
   tbody {
     background-color: $table-background;
-      border-top-left-radius: $base-border-radius;
-      border-top-right-radius: $base-border-radius;
-      border-bottom-left-radius: $base-border-radius;
-      border-bottom-right-radius: $base-border-radius;
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
 
     td, th {
       boder: 1px solid $base-border-color;
@@ -54,27 +54,15 @@
     td {
       border-bottom: 0px;
       border-left: 1px solid $table-border-color;
-      border-top: 1px solid $table-border-color;
       padding: $table-padding;
 
       &:first-child {
         border-left: none;
       }
 
-      button {
-        display: inline-block;
-        font-size: 0.7em;
-        line-height: $base-line-height;
-        margin-bottom: 0.3em;
-        margin-right: 0.5em;
-        outline: none;
-        padding: 0.3em 1em;
-        width: 100%;
-
-        @include media($medium-screen) {
-          margin-bottom: 0;
-          width: auto;
-        }
+      @include media($medium-screen) {
+        margin-bottom: 0;
+        width: auto;
       }
     }
   }

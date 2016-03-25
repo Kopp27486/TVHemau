@@ -31,14 +31,14 @@ $navigation-font-color-hover: $white;
 $navigation-color-hover: $white;
 
 /* Variablen _nav-bar */
-$centered-navigation-padding: 1em;
-$centered-navigation-logo-height: 3em;
-$centered-navigation-color: transparentize($base-font-color, 0.3);
-$centered-navigation-color-hover: $black;
-$centered-navigation-item-padding: 1em;
-$centered-navigation-submenu-padding: 1em;
-$centered-navigation-submenu-width: 12em;
-$centered-navigation-item-nudge: 2.2em;
+$main-navigation-padding: 1em;
+$main-navigation-logo-height: 3em;
+$main-navigation-color: transparentize($base-font-color, 0.3);
+$main-navigation-color-hover: $black;
+$main-navigation-item-padding: 1em;
+$main-navigation-submenu-padding: 1em;
+$main-navigation-submenu-width: 12em;
+$main-navigation-item-nudge: 2.2em;
 $horizontal-bar-mode: $large-screen;
 
 /* Variablen _footer-bar */

@@ -5,7 +5,6 @@ html
     meta content="IE=edge" http-equiv="X-UA-Compatible" /
     meta charset="utf-8" /
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /
-    /! Use title if it's in the page YAML frontmatter
     title= current_page.data.title || "TV Hemau 1904"
     meta name="author" content="Christoph Kopp"
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css" /
@@ -16,10 +15,11 @@ html
       header
         img src="../images/headline-1.jpg" width="100%" alt= "TV Hemau 1904"
 
-        header.centered-navigation role="banner" 
-          .centered-navigation-wrapper
+        header.navigation role="banner" 
+          .navigation-wrapper
             a.mobile-logo href="index.html" 
               img alt=("Home") src="../images/TV-HEMAU-white.png" /
+<<<<<<< Updated upstream
             a.centered-navigation-mobile-menu.hamburglar.is-open id="hamburger js-centered-navigation-mobile-menu" href="index.html"
               .burger-icon
                 .burger-container
@@ -35,12 +35,17 @@ html
               .path-burger
                 .animate-path
                   .path-rotation
+=======
+            a#js-centered-navigation-mobile-menu.navigation-mobile-menu.logo href="index.html" 
+              img alt=("Menü") src="../images/burger-menu-white.png" /
+>>>>>>> Stashed changes
 
           nav role="navigation" 
-            ul#js-centered-navigation-menu.centered-navigation-menu.show
+            ul#js-centered-navigation-menu.navigation-menu.show
               li.nav-link.logo
                 a.logo href="index.html" 
                   img alt=("Home") src="../images/TV-HEMAU-white.png" /
+                  
               li.nav-link.more
                 a href="fussball.html" Fußball
                 ul.submenu
@@ -67,8 +72,10 @@ html
                     a href="fussball-sponsoren.html" Sponsoren
                   li 
                     a href="" JFG
+                    
               li.nav-link
                 a href=""  Handball
+                
               li.nav-link.more
                 a href="turnen.html"  Turnen
                 ul.submenu
@@ -76,6 +83,7 @@ html
                     a href="turnen-ansprechpartner.html" Ansprechpartner
                   li
                     a href="turnen-training.html" Training
+                    
               li.nav-link.more
                 a href='/tennis.html' Tennis
                 ul.submenu
@@ -83,6 +91,7 @@ html
                     a href="tennis-ansprechpartner.html" Ansprechpartner
                   li
                     a href="tennsi-halle_mieten.html" Halle mieten
+                    
               li.nav-link.more
                 a href="herzsport.html"  Herzsport
                 ul.submenu
@@ -90,6 +99,7 @@ html
                     a href="herzsport-ansprechpartner.html" Ansprechpartner
                   li
                     a href="herzsport-training.html" Training
+                    
               li.nav-link.more
                 a href="tischtennis.html"  Tischtennis
                 ul.submenu
@@ -97,8 +107,10 @@ html
                     a href="tischtennis-ansprechpartner.html" Ansprechpartner
                   li
                     a href="tischtennis-training.html" Training
+                    
               li.nav-link
                 a href=""  Ski & Snowboard
+                
               li.nav-link.more
                 a href="volleyball.html"  Volleyball
                 ul.submenu
@@ -106,14 +118,15 @@ html
                     a href="volleyball-ansprechpartner.html" Ansprechpartner
                   li
                     a href="volleyball-training.html" Training
+                    
               li.nav-link
                 a href=""  Prinzengarde
+                
               li.nav-link
                 a href=""  Sportstüberl
 
       = yield
       
-
       footer.footer role="contentinfo" 
         ul
           li
@@ -121,13 +134,15 @@ html
           li
             a href="home-kontakt.html"  Kontakt
           li
-            a href="../images/beitritt.pdf" target="_blank"  Beitrittserklärung.pdf
+            a href="javascript:void(0)"  Privacy Policy
+
         .footer-secondary-links
           ul
             li
               a href="impressum.html"  Impressum / Links
             li
-              a href="javascript:void(0)"  Privacy Policy
+              a href="../images/beitritt.pdf" target="_blank"  Beitrittserklärung.pdf
+          
           ul.footer-social
             li
               a href="javascript:void(0)" 
