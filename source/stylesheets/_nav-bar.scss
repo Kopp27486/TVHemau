@@ -1,11 +1,11 @@
 .centered-navigation {
 
-  background: $navigation-background;
   background-color: $navigation-background;
   border-bottom: 3px solid $base-border-color;
   width: 100%;
   z-index: 9999;
   margin-bottom: 3em;
+  font-weight: bold;
 
 
 // Mobile view
@@ -18,7 +18,6 @@
 
     img {
       max-height: $navigation-height;
-      opacity: .6;
       padding: .8em 0;
     }
 
@@ -132,7 +131,6 @@
   .logo img {
     margin-bottom: -$centered-navigation-logo-height / 3;
     max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
   }
 
 
