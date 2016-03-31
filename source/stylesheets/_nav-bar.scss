@@ -1,12 +1,16 @@
 .navigation {
-
-  background-color: $navigation-background;
+  background: $tv-hemau-rot;
+  background: -moz-linear-gradient(top, $tv-hemau-rot 0%, $light-gray 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $tv-hemau-rot), color-stop(100%, $light-gray));
+  background: -webkit-linear-gradient(top, $tv-hemau-rot 0%, $light-gray 100%);
+  background: -o-linear-gradient(top, $tv-hemau-rot 0%, $light-gray 100%);
+  background: -ms-linear-gradient(top, $tv-hemau-rot 0%, $light-gray 100%);
+  background: linear-gradient(to bottom, $tv-hemau-rot 0%, $light-gray 100%);
   border-bottom: 3px solid $base-border-color;
   width: 100%;
   z-index: 9999;
   margin-bottom: 3em;
   font-weight: bold;
-
 
 // Mobile view
 
@@ -45,7 +49,6 @@
       color: $navigation-color-hover;
     }
   }
-
 
 // Nav menu
 
@@ -86,7 +89,6 @@
   }
 
   ul li.nav-link {
-    background: $navigation-background;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -137,7 +139,6 @@
 
   li.more.nav-link {
     padding-right: 0;
-    background-color: $tv-hemau-rot;
 
     @include media($large-screen) {
       padding-right: $main-navigation-submenu-padding;

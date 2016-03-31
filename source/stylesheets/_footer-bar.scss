@@ -1,7 +1,11 @@
 .footer {
-
-  background: $navigation-background;
-  background-color: $navigation-background;
+  background: $tv-hemau-rot;
+  background: -moz-linear-gradient(top, $light-gray 0%, $tv-hemau-rot 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $light-gray), color-stop(100%, $tv-hemau-rot));
+  background: -webkit-linear-gradient(top, $light-gray 0%, $tv-hemau-rot 100%);
+  background: -o-linear-gradient(top, $light-gray 0%, $tv-hemau-rot 100%);
+  background: -ms-linear-gradient(top, $light-gray 0%, $tv-hemau-rot 100%);
+  background: linear-gradient(to bottom, $light-gray 0%, $tv-hemau-rot 100%);
   border-top: 3px solid $base-border-color;
   padding: $base-spacing;
   width: 100%;
