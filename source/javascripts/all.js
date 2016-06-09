@@ -35,3 +35,24 @@ $('document').ready(function () {
   }
 
 });
+
+var attempt = 3;
+
+function validate() {
+  var user = document.getElementById('username').value;
+  var pass = document.getElementById('password').value;
+  if(user == "root" && pass =="123") {
+    alert("Login successfully");
+    window.location = "userbereich.html";
+    return false;
+  } else {
+    attempt --;
+    alert("Incorrect username or password! "+attempt+" tries left")
+    if( attempt == 0) {
+      document.getElementById("username").disabled = true;
+      document.getElementById("password").disabled = true;
+      document.getElementById("submit").disabled = true;
+      return false;
+    }
+  }
+}
